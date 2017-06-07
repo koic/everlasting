@@ -18,6 +18,12 @@ RSpec.describe Everlasting::Hooks do
       it { is_expected.to eq(foo: 'abc', bar: 'xyz') }
     end
 
+    context 'Called by a Hash method with argument' do
+      subject { params.merge(qoox: 'def', qooox: 'uvw') }
+
+      it { is_expected.to eq('foo' => 'abc', 'bar' => 'xyz', 'qoox' => 'def', 'qooox' => 'uvw') }
+    end
+
     context 'Called by unknown method' do
       specify {
         expect { params.foo }.to raise_error(NoMethodError)
