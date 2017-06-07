@@ -1,4 +1,4 @@
-# Everlasting
+# Everlasting [![Build Status](https://travis-ci.org/koic/everlasting.svg)](https://travis-ci.org/koic/everlasting)
 
 Enhance the behavior of Hash in the behavior of ActionController::Parameters.
 
