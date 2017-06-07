@@ -46,8 +46,11 @@ params.symbolize_keys # => It outputs exception information to Rails.logger.erro
 It will output to the Rails log together with the backtrace as follows.
 
 ```console
+The Everlasting Gem detected a method that ActionController::Parameters does not know.
 ActionController::Parameters does not inherit Hash since Rails 5.0.
 Use `params.to_h.symbolize_keys' instead of `params.symbolize_keys'.
+
+---backtrace---
 
 (snip)
 
