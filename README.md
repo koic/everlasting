@@ -24,7 +24,8 @@ Or install it yourself as:
 
 ## Support version
 
-Rails 5 or higher.
+- Ruby 2.2.2 or higher.
+- Rails 5 or higher.
 
 ## About behavior
 

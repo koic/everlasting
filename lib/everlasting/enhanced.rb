@@ -9,7 +9,7 @@ module Everlasting
 
       hash = self.to_h
 
-      Rails.logger&.error <<~EOS
+      Rails.logger.try!(:error, <<-EOS.strip_heredoc)
         ActionController::Parameters does not inherit Hash since Rails 5.0.
         Use `params.to_h.#{method_name}' instead of `params.#{method_name}'.
 
