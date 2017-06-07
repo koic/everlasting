@@ -18,7 +18,7 @@ RSpec.describe Everlasting::Hooks do
       it { is_expected.to eq(foo: 'abc', bar: 'xyz') }
     end
 
-    context 'Called by knknown method' do
+    context 'Called by unknown method' do
       specify {
         expect { params.foo }.to raise_error(NoMethodError)
       }
