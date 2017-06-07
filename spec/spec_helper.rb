@@ -1,4 +1,4 @@
-# -*- frozen-string-literal: true -*-
+# frozen-string-literal: true
 
 require 'bundler/setup'
 require 'rails/all'

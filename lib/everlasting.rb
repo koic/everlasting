@@ -1,4 +1,4 @@
-# -*- frozen-string-literal: true -*-
+# frozen-string-literal: true
 
 require 'everlasting/version'
 require 'everlasting/enhanced'

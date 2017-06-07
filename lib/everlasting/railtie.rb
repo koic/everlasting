@@ -1,4 +1,4 @@
-# -*- frozen-string-literal: true -*-
+# frozen-string-literal: true
 
 module Everlasting
   class Railtie < ::Rails::Railtie

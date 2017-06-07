@@ -1,4 +1,4 @@
-# -*- frozen-string-literal: true -*-
+# frozen-string-literal: true
 
 RSpec.describe Everlasting::Hooks do
   describe '.init' do

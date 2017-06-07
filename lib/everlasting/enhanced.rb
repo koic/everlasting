@@ -1,3 +1,5 @@
+# frozen-string-literal: true
+
 module Everlasting
   module Enhanced
     HASH_INSTANCE = {}
