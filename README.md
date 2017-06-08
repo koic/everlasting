@@ -1,4 +1,4 @@
-# Everlasting [![Build Status](https://travis-ci.org/koic/everlasting.svg)](https://travis-ci.org/koic/everlasting)
+# Everlasting [![Build Status](https://travis-ci.org/koic/everlasting.svg)](https://travis-ci.org/koic/everlasting) [![Gem Version](https://badge.fury.io/rb/everlasting.svg)](http://badge.fury.io/rb/everlasting)
 
 Enhance the behavior of Hash in the behavior of ActionController::Parameters.
 
