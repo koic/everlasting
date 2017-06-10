@@ -9,7 +9,7 @@ RSpec.describe Everlasting::Hooks do
     end
 
     let(:params) {
-      ActionController::Parameters.new('foo' => 'abc', 'bar' => 'xyz')
+      ActionController::Parameters.new(foo: 'abc', bar: 'xyz')
     }
 
     context 'Called by a Hash method' do
