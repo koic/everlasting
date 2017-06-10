@@ -3,4 +3,7 @@
 require 'everlasting/version'
 require 'everlasting/enhanced'
 require 'everlasting/hooks'
-require 'everlasting/railtie'
+
+if defined?(Rails)
+  require 'everlasting/railtie'
+end
