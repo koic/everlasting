@@ -24,6 +24,12 @@ RSpec.describe Everlasting::Hooks do
       it { is_expected.to eq('foo' => 'abc', 'bar' => 'xyz', 'qoox' => 'def', 'qooox' => 'uvw') }
     end
 
+    context 'Called by a Hash method with block' do
+      subject { params.select! {|param| param == 'foo' } }
+
+      it { is_expected.to eq('foo' => 'abc') }
+    end
+
     context 'Called by unknown method' do
       specify {
         expect { params.foo }.to raise_error(NoMethodError)
