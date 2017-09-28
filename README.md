@@ -11,16 +11,18 @@ The aim of this Gem is to detect a Hash method calls to ActionController::Parame
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'everlasting'
+group :production do
+  gem 'everlasting'
+end
 ```
+
+:star2: __Recommend you to enable it only in production environment. In other environments it is to detect errors with fail fast.__
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install everlasting
+```console
+$ bundle install
+```
 
 ## Support version
 
