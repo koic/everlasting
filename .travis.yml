@@ -9,5 +9,29 @@ rvm:
 before_install:
   - gem update --system
   - gem update --remote bundler
-allow_failures:
-  - rvm: ruby-head
+
+gemfile:
+  - gemfiles/Gemfile-rails5.0.x
+  - gemfiles/Gemfile-rails5.1.x
+  - gemfiles/Gemfile-rails5.2.x
+  - gemfiles/Gemfile-rails_edge
+
+matrix:
+  allow_failures:
+    - rvm: 2.4.4
+      gemfile: gemfiles/Gemfile-rails_edge
+    - rvm: 2.5.1
+      gemfile: gemfiles/Gemfile-rails_edge
+    - rvm: ruby-head
+      gemfile: gemfiles/Gemfile-rails5.0.x
+    - rvm: ruby-head
+      gemfile: gemfiles/Gemfile-rails5.1.x
+    - rvm: ruby-head
+      gemfile: gemfiles/Gemfile-rails5.2.x
+    - rvm: ruby-head
+      gemfile: gemfiles/Gemfile-rails_edge
+  exclude:
+    - rvm: 2.2.10
+      gemfile: gemfiles/Gemfile-rails_edge
+    - rvm: 2.3.7
+      gemfile: gemfiles/Gemfile-rails_edge
